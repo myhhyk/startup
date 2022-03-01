@@ -28,7 +28,7 @@ void Reset_Handler(void){
 	setupRCC();
 	setupUSART1();
 	
-	/*Экспортируем адреса секций*/
+	/*Импортируем адреса секций*/
 	extern uint8_t _data_flash;
 	extern uint8_t _data_sram_start;
 	extern uint8_t _data_sram_end;
